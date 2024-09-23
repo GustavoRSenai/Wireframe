@@ -1,0 +1,500 @@
+/* Importa a fonte 'Cabin' do Google Fonts para ser usada no site */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Define o estilo do corpo da página */
+body{
+	font-family: "Cabin", sans-serif; /* Aplica a fonte importada */
+	color: #FFF; /* Define a cor do texto como branco */
+	background-color: #00132B; /* Define o fundo da página como azul escuro */
+}
+
+/* Define a transição suave para links ao serem interagidos */
+a {
+	transition: .5s; /* Transição de 0,5s ao interagir com links */
+}
+
+/* Estilos para a barra lateral (sidebar) */
+
+#sidebar {
+	position: fixed; /* Fixa a sidebar na tela, independente do scroll */
+	height: 100%; /* Define a altura total da página */
+	width: 300px; /* Define a largura da sidebar */
+	background-color: #FA5252; /* Cor de fundo vermelho */
+	padding-top: 40px; /* Espaçamento superior da sidebar */
+}
+
+/* Estilo do título (h1) dentro da sidebar */
+#sidebar h1 {
+	color: #00132B; /* Cor do texto (azul escuro) */
+	font-size: 32px; /* Tamanho da fonte do título */
+	text-align: center; /* Centraliza o texto */
+	margin-top: 20px; /* Espaçamento superior */
+	margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+/* Estilo dos links na sidebar */
+#sidebar a {
+	color: #00132B; /* Cor do link (azul escuro) */
+	text-decoration: none; /* Remove o sublinhado dos links */
+	font-size: 20px; /* Tamanho da fonte dos links */
+	font-weight: bold; /* Define os links em negrito */
+	margin-left: 10px; /* Espaçamento à esquerda dos links */
+}
+
+/* Muda a cor do link ao passar o mouse */
+#sidebar a:hover {
+	color: #00327C; /* Cor azul mais clara ao passar o mouse */
+}
+
+/* Estilo dos itens de lista (li) dentro da sidebar */
+#sidebar li {
+	padding: 20px; /* Espaçamento interno dos itens */
+}
+
+/* Centraliza o conteúdo da sidebar */
+.sidebar-container {
+	position: relative; /* Define posição relativa para o container */
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px; /* Largura do container */
+}
+
+/* Estilo para o logo da Temakeria */
+.logo-temakeria {
+	width: 60px; /* Define largura da imagem do logo */
+	height: 60px; /* Define altura da imagem */
+	display: block; /* Exibe como bloco */
+	position: relative;
+	margin-left: auto;
+	margin-right: auto; /* Centraliza o logo */
+}
+
+/* Estilos para o conteúdo principal */
+.content {
+	position: absolute;
+	left: 300px; /* Espaçamento à esquerda para acomodar a sidebar */
+	width: calc(100% - 300px); /* Largura ajustada para o restante da página */
+}
+/* Define as cores e o espaçamento padrão dos títulos dentro do conteúdo */
+.content h1, .content h2 {
+	color: #FA5252; /* Cor vermelha */
+	margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+/* Define o tamanho de fonte do título principal (h1) */
+.content h1 {
+	font-size: 48px; /* Tamanho grande para o h1 */
+}
+
+/* Define o tamanho de fonte do subtítulo (h2) */
+.content h2 {
+	font-size: 35px; /* Tamanho menor que o h1 */
+}
+
+/* Define o espaçamento à esquerda para seções */
+section {
+	padding-left: 50px; /* Espaçamento interno à esquerda */
+}
+
+/* Estilos para a seção de boas-vindas */
+
+/* Remove o espaçamento à esquerda da seção de boas-vindas */
+#sessao-bemvindo {
+	padding-left: 0;
+}
+
+/* Define o espaçamento à esquerda dentro do conteúdo da seção de boas-vindas */
+.sessao-bemvindo-content {
+	padding-left: 50px;
+}
+
+/* Estilo para o banner da seção de boas-vindas */
+#sessao-bemvindo .banner {
+	height: 500px; /* Altura fixa do banner */
+	background-image: url('../img/banner2.jpg'); /* Imagem de fundo */
+	background-position: center; /* Centraliza a imagem */
+	background-size: cover; /* Cobre todo o banner */
+}
+
+/* Estilo do título h1 na seção de boas-vindas */
+#sessao-bemvindo h1 {
+	margin-top: 70px; /* Espaçamento superior */
+}
+
+/* Clearfix para a seção de boas-vindas e sobre, garantindo que o layout flua corretamente */
+#sessao-bemvindo::after, #sessao-sobre::after {
+	content: ""; /* Elemento vazio */
+	display: block;
+	clear: both; /* Impede que o float afete o próximo conteúdo */
+	margin-bottom: 100px; /* Espaçamento inferior */
+}
+
+/* Mini-banner da seção */
+.sessao-minibanner {
+	width: 300px; /* Largura fixa */
+	height: 400px; /* Altura fixa */
+	background-image: url('../img/banner3.jpg'); /* Imagem de fundo */
+	background-position: center; /* Centraliza a imagem */
+	background-size: cover; /* Cobre todo o mini-banner */
+	float: left; /* Faz o mini-banner flutuar à esquerda */
+}
+
+/* Estilo para a descrição da seção */
+.sessao-descricao {
+	position: absolute; /* Posiciona o elemento de forma absoluta */
+	left: 370px; /* Define a posição à esquerda */
+	padding-right: 30px; /* Espaçamento interno à direita */
+}
+
+/* Estilo para os parágrafos dentro da descrição */
+.sessao-descricao p {
+	line-height: 2; /* Aumenta o espaçamento entre linhas */
+	font-size: 16px; /* Define o tamanho da fonte */
+	margin-bottom: 30px; /* Espaçamento inferior */
+	margin-left: 25px; /* Espaçamento à esquerda */
+}
+
+/* Estilo para os botões da seção de boas-vindas e do formulário */
+.sessao-bemvindo-btn, form input[type=submit] {
+	background-color: #FA5252; /* Fundo vermelho */
+	color: #FFF; /* Texto branco */
+	text-decoration: none; /* Remove o sublinhado */
+	padding: 10px; /* Espaçamento interno */
+	transition: .5s; /* Transição suave ao interagir */
+	width: 100px; /* Largura fixa */
+	text-align: center; /* Centraliza o texto */
+	font-size: 100%; /* Tamanho de fonte padrão */
+	font-weight: bold; /* Negrito */
+	border: none; /* Remove bordas */
+	border-radius: 5%; /* Bordas arredondadas */
+	cursor: pointer; /* Muda o cursor para indicar clicável */
+	margin-left: 25px; /* Espaçamento à esquerda */
+}
+
+/* Estilo para o efeito hover nos botões */
+.sessao-bemvindo-btn:hover, form input[type=submit]:hover {
+	background-color: #ff8080; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* Estilos para a seção "sobre" */
+
+/* Estilo para o mini-banner da seção "sobre" */
+#sessao-sobre .sessao-minibanner {
+	float: right; /* Faz o mini-banner flutuar à direita */
+	margin-right: 50px; /* Espaçamento à direita */
+	background-image: url('../img/banner4.jpg'); /* Imagem de fundo */
+}
+
+/* Ajuste de posição e largura da descrição da seção "sobre" */
+#sessao-sobre .sessao-descricao {
+	position: absolute; /* Posiciona de forma absoluta */
+	left: 25px; /* Define a posição à esquerda */
+	width: calc(100% - 400px); /* Calcula a largura restante */
+}
+
+/* Estilos para a galeria */
+
+/* Define o estilo das imagens da galeria */
+.banner-galeria {
+	background-position: center; /* Centraliza a imagem */
+	background-size: cover; /* Cobre todo o espaço da galeria */
+	display: inline-block; /* Exibe as imagens em linha */
+	height: 200px; /* Define a altura das imagens */
+}
+
+/* Estilo das seções de galeria */
+#sessao-1, #sessao-2, #sessao-3 {
+	padding-right: 50px; /* Espaçamento à direita */
+	margin-bottom: 50px; /* Espaçamento inferior */
+}
+
+/* Estilo das imagens da primeira galeria */
+.fotos1-imgs {
+	width: 18.8%; /* Define a largura de cada imagem */
+	margin-left: .5%; /* Pequeno espaçamento à esquerda */
+	margin-right: .5%; /* Pequeno espaçamento à direita */
+}
+
+/* Imagem 1 da primeira galeria */
+#img1 {
+	background-image: url('../img/galeria1.jpg'); /* Imagem de fundo */
+	margin-left: 0; /* Sem margem à esquerda */
+}
+
+/* Imagem 2 da primeira galeria */
+#img2 {
+	background-image: url('../img/galeria2.jpg'); /* Imagem de fundo */
+}
+
+/* Imagem 3 da primeira galeria */
+#img3 {
+	background-image: url('../img/galeria3.jpg'); /* Imagem de fundo */
+}
+
+/* Imagem 4 da primeira galeria */
+#img4 {
+	background-image: url('../img/galeria4.jpg'); /* Imagem de fundo */
+}
+
+/* Imagem 5 da primeira galeria */
+#img5 {
+	background-image: url('../img/galeria5.jpg'); /* Imagem de fundo */
+	margin-right: 0; /* Sem margem à direita */
+}
+
+/* Estilo das imagens da segunda galeria */
+.fotos2-imgs {
+	width: 32.3%; /* Define a largura das imagens */
+	margin-left: .5%; /* Pequeno espaçamento à esquerda */
+	margin-right: .5%; /* Pequeno espaçamento à direita */
+}
+
+/* Imagem 6 da segunda galeria */
+#img6 {
+	background-image: url('../img/galeria6.jpg'); /* Imagem de fundo */
+	margin-left: 0; /* Sem margem à esquerda */
+}
+
+/* Imagem 7 da segunda galeria */
+#img7 {
+	background-image: url('../img/galeria7.jpg'); /* Imagem de fundo */
+}
+
+/* Imagem 8 da segunda galeria */
+#img8 {
+	background-image: url('../img/galeria8.jpg'); /* Imagem de fundo */
+	margin-right: 0; /* Sem margem à direita */
+}
+
+/* Estilo das imagens da terceira galeria */
+.fotos3-imgs {
+	width: 23.9%; /* Define a largura das imagens */
+	margin-left: .5%; /* Pequeno espaçamento à esquerda */
+	margin-right: .5%; /* Pequeno espaçamento à direita */
+}
+
+/* Imagem 9 da terceira galeria */
+#img9 {
+	background-image: url('../img/galeria9.jpg'); /* Imagem de fundo */
+	margin-left: 0; /* Sem margem à esquerda */
+}
+
+/* Imagem 10 da terceira galeria */
+#img10 {
+	background-image: url('../img/galeria10.jpg'); /* Imagem de fundo */
+}
+
+/* Imagem 11 da terceira galeria */
+#img11 {
+	background-image: url('../img/galeria11.jpg'); /* Imagem de fundo */
+}
+
+/* Imagem 12 da terceira galeria */
+#img12 {
+	background-image: url('../img/galeria12.jpg'); /* Imagem de fundo */
+	margin-right: 0; /* Sem margem à direita */
+}
+/* Estilos para a seção de contato */
+
+/* Define a largura máxima do formulário de contato */
+#form-contato {
+	width: 500px;
+}
+
+/* Estilos para os inputs de texto, e-mail e textarea dentro do formulário de contato */
+#form-contato input[type=text], #form-contato input[type=email], #form-contato textarea {
+	display: block; /* Mostra os campos como blocos, ocupando toda a largura */
+	border-bottom: 3px solid #FA5252; /* Adiciona uma borda inferior vermelha */
+	padding: 10px; /* Espaçamento interno */
+	margin-bottom: 20px; /* Espaçamento inferior entre os campos */
+	width: 100%; /* O campo ocupa 100% da largura do contêiner */
+	font-size: 16px; /* Define o tamanho da fonte */
+	font-family: 'Open sans', sans-serif; /* Define a fonte utilizada */
+}
+
+/* Estilos para quando os inputs ou textarea estiverem focados */
+#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea:focus {
+	border-color: #FA5252; /* Mantém a cor da borda vermelha ao focar */
+}
+
+/* Define a altura do campo textarea */
+#form-contato textarea {
+	height: 150px; /* Altura fixa do textarea */
+}
+
+/* Estilo para o placeholder dentro dos campos do formulário */
+#form-contato ::placeholder {
+	color: #FA5252; /* Cor vermelha para o placeholder */
+}
+
+/* Estilos para o botão de envio do formulário */
+#form-contato input[type=submit] {
+	margin-left: 0; /* Remove a margem à esquerda */
+	font-size: 16px; /* Tamanho da fonte */
+	width: 180px; /* Largura fixa do botão */
+}
+
+/* Estilos para o rodapé */
+
+/* Define a altura e o espaçamento superior do rodapé */
+footer {
+	height: 100px; /* Altura do rodapé */
+	padding-top: 150px; /* Espaçamento superior */
+	color: #FA5252; /* Cor do texto no rodapé */
+}
+
+/* Estilos para o parágrafo dentro do rodapé */
+footer p {
+	text-align: center; /* Centraliza o texto */
+	font-weight: bold; /* Define o texto em negrito */
+}
+
+/* Estilos para a responsividade em dispositivos móveis com largura máxima de 768px */
+@media (max-width: 768px) {
+
+    /* Ajuste da barra lateral em dispositivos móveis */
+    #sidebar {
+        width: 100%; /* A barra lateral ocupa 100% da largura */
+        height: auto; /* Altura ajustável */
+        position: relative; /* Posição relativa para ajustar no layout */
+        padding: 20px 0; /* Espaçamento superior e inferior */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    /* Centraliza e ajusta o contêiner da logo e navegação */
+    .sidebar-container {
+        width: 100%; /* O contêiner ocupa toda a largura */
+        margin: 0; /* Remove margens */
+    }
+
+    /* Ajusta a margem inferior da logo */
+    .logo-temakeria {
+        margin-bottom: 20px; /* Espaçamento inferior */
+    }
+
+    /* Remove margem inferior dos títulos h1 na barra lateral */
+	#sidebar h1 {
+		margin-bottom: 0;
+	}
+
+    /* Remove o espaçamento interno da lista de navegação */
+    #sidebar ul {
+        padding: 0;
+    }
+
+    /* Exibe os itens da lista de navegação em linha */
+    #sidebar li {
+        display: inline-block;
+        padding: 10px 20px; /* Espaçamento ao redor dos itens */
+    }
+
+    /* Ajusta o tamanho da fonte dos links na barra lateral */
+	#sidebar a {
+		font-size: 14px; /* Fonte menor para dispositivos móveis */
+	}
+
+    /* Ajusta o banner na seção de boas-vindas */
+	#sessao-bemvindo .banner {
+		height: 500px; /* Altura do banner */
+		background-image: url('../img/banner2.jpg'); /* Imagem de fundo */
+		background-position: 10%; /* Ajusta a posição da imagem */
+		background-size: cover; /* A imagem cobre todo o banner */
+	}
+
+    /* Ajusta o conteúdo geral da página */
+    .content {
+        position: relative;
+        left: 0;
+		padding: 0;	 /* Remove espaçamento interno */
+        width: 100%; /* O conteúdo ocupa toda a largura */
+    }
+
+    /* Centraliza o conteúdo da seção de boas-vindas */
+	.sessao-bemvindo-content {
+		padding-left: 20px; /* Espaçamento à esquerda */
+		display: flex;
+		flex-direction: column;
+		align-items: center; /* Centraliza os itens */
+	}
+
+    /* Ajusta o tamanho da fonte do título h1 */
+	.content h1 {
+		font-size: 34px; /* Fonte menor para dispositivos móveis */
+	}
+
+    /* Ajusta o parágrafo da seção de descrição */
+	.sessao-descricao p {
+		font-size: 14px; /* Tamanho da fonte reduzido */
+		margin-top: 30px; /* Espaçamento superior */
+		text-align: justify; /* Texto justificado */
+	}
+
+    /* Ajusta o tamanho do mini-banner */
+	.sessao-minibanner {
+		width: 230px; /* Largura reduzida */
+		height: 100px; /* Altura reduzida */
+		background-position: 50% 65%; /* Ajuste da posição da imagem */
+	}
+
+    /* Ajusta a posição da descrição da seção */
+	.sessao-descricao {
+		position: relative; /* Posição relativa */
+		left: 0px; /* Sem deslocamento à esquerda */
+		padding-right: 30px; /* Espaçamento interno à direita */
+	}
+
+    /* Remove o float do mini-banner na seção "sobre" */
+	#sessao-sobre .sessao-minibanner {
+		float: none; /* Remove o flutuamento */
+		margin-right: 0px; /* Sem margem à direita */
+	}
+
+    /* Ajusta a largura e altura da descrição na seção "sobre" */
+	#sessao-sobre .sessao-descricao {
+		width: 80%; /* Largura de 80% */
+		height: auto; /* Altura ajustável */
+		margin-right: 50px; /* Espaçamento à direita */
+	}
+
+    /* Ajusta o tamanho da fonte do subtítulo h2 */
+	.content h2 {
+		font-size: 30px; /* Fonte menor para dispositivos móveis */
+	}
+
+    /* Ajustes para as seções e o rodapé */
+	#sessao-1, #sessao-2, #sessao-3, #sessao-contato, footer {
+		position: relative;
+		top: 400px; /* Deslocamento para baixo */
+	}
+
+    /* Ajusta a largura das imagens na primeira galeria */
+	.fotos1-imgs {
+		width: 31%; /* Largura ajustada para dispositivos móveis */
+	}
+
+    /* Ajusta a largura das imagens específicas na primeira galeria */
+	#img4, #img5 {
+		width: 47%; /* Largura aumentada para essas imagens */
+	}
+
+    /* Ajusta a largura das imagens na segunda galeria */
+	.fotos2-imgs {
+		width: 30%; /* Largura ajustada para dispositivos móveis */
+	}
+
+    /* Ajusta a largura das imagens na terceira galeria */
+	.fotos3-imgs {
+		width: 22%; /* Largura ajustada para dispositivos móveis */
+	}
+
+    /* Ajusta o formulário de contato em dispositivos móveis */
+    #form-contato {
+        width: 200px; /* Largura reduzida para dispositivos móveis */
+        height: auto; /* Altura ajustável */
+    }
+
+    /* Ajusta o rodapé para dispositivos móveis */
+    footer {
+        padding-top: 50px; /* Reduz o espaçamento superior */
+    }
+}

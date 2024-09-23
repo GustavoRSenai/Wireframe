@@ -6,13 +6,10 @@
 
 ## Wireframe de baixa fidelidade:
 
-<img align="left" height="400" src="https://github.com/user-attachments/assets/dcef69b1-5cb4-44fc-842b-6abf8f01befc" />
+<img align="left" height="350" src="https://github.com/user-attachments/assets/dcef69b1-5cb4-44fc-842b-6abf8f01befc" />
 
->Esta imagem representa o Wireframe de baixa fidelidade criado para a criação do projeto temakeria. O wireframe de baiza fidelidade é usado para saber tamanhos, posições e outras coisas do site oficial.
+>Esta imagem representa o Wireframe de baixa fidelidade criado para a criação do projeto temakeria. Os wireframes de baixa fidelidade são simples e geralmente esboçados à mão ou com ferramentas básicas. Foca na estrutura geral e na disposição dos elementos.
 
-<br>
-
-<br>
 
 <br>
 
@@ -30,7 +27,7 @@
 
 <br>
 
-<br>
+
 
 #
 
@@ -38,7 +35,7 @@
 
 ## Wireframe de alta fidelidade:
 
-<img align="left" height="400" src="https://github.com/user-attachments/assets/20e85d11-9624-4e73-9ce0-b34fff758baa" />
+<img align="left" height="310" src="https://github.com/user-attachments/assets/20e85d11-9624-4e73-9ce0-b34fff758baa" />
 
 >Primeiramente foi criado uma identidade visual para o conhecimento das cores, fontes e componentes do site
 
@@ -60,21 +57,11 @@
 
 <br>
 
-<br>
-
-<br>
-
-<br>
-
-<br>
-
 #
 
-<img align="left" height="400" src="https://github.com/user-attachments/assets/4a1c7b30-0f91-4d2a-a3f3-d285e966a194" />
+<img align="left" height="330" src="https://github.com/user-attachments/assets/4a1c7b30-0f91-4d2a-a3f3-d285e966a194" />
 
->Logo após foi criado o wireframe de alta fidelidade com os funcionamentos de link dos botões do site para que o funcionamento do site também seja simulado.
-
-<br>
+>Logo após foi criado o wireframe de alta fidelidade com os funcionamentos de link dos botões do site para que o funcionamento do site também seja simulado, os wireframes de alta fidelidade são mais detalhados e próximos do design final. Podem incluir elementos visuais e interativos.
 
 <br>
 
@@ -90,13 +77,6 @@
 
 <br>
 
-<br>
-
-<br>
-
-<br>
-
-<br>
 
 #
 
